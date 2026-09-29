@@ -13,25 +13,40 @@ This project invites a student to explore these questions using **LS-DYNA, Pytho
   <img src="Media/01_ship-OWT_impact.gif" width="650">
 </p>
 
-*ref: International Marine Contractors Association. (n.d.). Windfarm Support Vessel Njord Forseti hit wind turbine tower – Jersey Maritime Administration – IMCA.*
+*The Njord Forseti collision with a wind turbine foundation at Borkum Rifgrund in April 2020. The first damage photograph below shows the same vessel following this incident. Source: [IMCA / Jersey Maritime Administration](#ref-imca).*
 
 Our work so far has focused on the response of **deformable offshore wind turbine supports struck by a rigid ship**. This means the ship can move, but its structure cannot bend, buckle or crush. The turbine support is allowed to deform.
 
-The numerical examples below illustrate the turbine response and the motion of the colliding bodies. Click a preview to open the corresponding MP4 video.
+Previous Master’s and doctoral research has investigated how to represent these collisions and which modelling assumptions influence the response. The examples below show three contributions to this research. Click a video preview to open the corresponding MP4 file.
+
+### Representing the interaction with water
+
+In his Master’s thesis, **Abhemanyu Palaniswamy Chandrasekaran** coupled the ship collision model with **MCOL** to account for hydrodynamic effects. He compared this approach with a fully coupled **Eulerian–Lagrangian simulation**, in which the water and structures are represented together, to assess the validity of the MCOL-based approach. This work addressed an essential modelling question: how can we account for the surrounding water without having to model the fluid explicitly in every collision simulation? [Read the thesis reference.](#ref-abhe)
 
 [![Ship–wind turbine collision simulation](Media/02_preview.png)](Media/02_media1_abhe.mp4)
 
-*Collision simulation showing the interaction between a ship and a tubular wind turbine support.*
+*Collision simulation from the Master’s thesis of Abhemanyu Palaniswamy Chandrasekaran (2024).*
+
+### Understanding the influence of ship rolling
+
+**John Mathinji Karatu** investigated side collisions with a floating offshore wind turbine, focusing on the influence of **ship rolling motion**. Rolling changes how the ship side comes into contact with the turbine support and can increase the severity of the collision. His work examined this effect on the collision response, highlighting why the ship’s motion deserves attention alongside its impact velocity and geometry. The possibility of greater damage to both structures also motivates the next step: explicitly representing ship deformation. [Read the thesis reference.](#ref-john)
 
 | View of the support | View of the ship motion |
 |:---:|:---:|
 | [![Support response during collision](Media/03_1_preview.png)](Media/03_1_Media1_John.mp4) | [![Ship motion during collision](Media/03_2_preview.png)](Media/03_2_Media2_John.mp4) |
 | [Play video](Media/03_1_Media1_John.mp4) | [Play video](Media/03_2_Media2_John.mp4) |
 
+*Two views from John Mathinji Karatu’s Master’s thesis (2026), showing the support response and the motion of the ship during a side collision.*
+
+### Identifying the modelling choices that matter
+
+In her doctoral thesis, **Sara Echeverry Jaramillo** carried out a parametric investigation of ship impacts on a spar-like floating offshore wind turbine. Her study considered factors such as **impactor mass, impact velocity, hydrodynamic coupling through MCOL and the inclusion of gravity**. The aim was to understand how these choices affect the predicted response and to identify what needs to be represented in a collision model. This provides a foundation for applying the same approach to the ship structure in the proposed thesis. [Read the thesis reference.](#ref-sara)
+
 <p align="center">
-  <img src="Media/04_image11_sarah.gif" width="650">
+  <img src="Media/04_image11_sarah.gif" width="650" alt="Collision simulation from Sara Echeverry Jaramillo’s doctoral research">
 </p>
-<!-- Media slot 04: replace Media/04_image11_sarah.gif before displaying it. The supplied file contains a single black frame. -->
+
+*Illustration from Sara Echeverry Jaramillo’s doctoral thesis on the numerical and analytical study of a spar-like floating offshore wind turbine impacted by a ship.*
 
 ## But how realistic is a perfectly rigid ship?
 
@@ -43,7 +58,13 @@ Real ships can sustain substantial structural damage. Their hull plating and int
   <img src="Media/05_3_Picture5.jpg" height="210" alt="Close view of damaged hull plating and exposed internal structure">
 </p>
 
-*Examples of ship structural damage. These photographs illustrate possible deformation; they are not presented as matched validation cases or as evidence that each incident involved a wind turbine.*
+*From left to right:*
+
+- **Njord Forseti — April 2020:** bow damage following the collision with a wind turbine foundation at Borkum Rifgrund in the North Sea. This is the incident shown in the opening GIF. [IMCA / Jersey Maritime Administration](#ref-imca).
+- **Wind of Hope — 19 September 2024:** damage to the starboard side above the waterline, including the helideck; minor damage to the turbine base was also reported.
+- **Petra L. — 2023:** hull damage following a collision with an offshore wind turbine at Gode Wind 1 in Germany.
+
+*These real incidents illustrate why ship deformation matters. They are contextual examples, not matched validation cases for the simulations above. Source links for the Wind of Hope and Petra L. images remain to be added.*
 
 This leads to our next question: **when is the rigid-ship assumption sufficient, and when do we need to model ship deformation explicitly?** Answering it requires a practical way to generate and compare deformable ship models.
 
@@ -107,3 +128,20 @@ The student will have an independent research question and will interpret their 
 
 **Research contact:** Gabriel Vandegar — University of Liège, ArGEnCo/ANAST.  
 Contact and practical arrangements will be provided through the EMship topic proposal.
+
+
+## References and media sources
+
+<a id="ref-abhe"></a>
+**Palaniswamy Chandrasekaran, Abhemanyu (2024).** *Numerical Simulation of Ship-Floating Offshore Wind Turbine Collision Using the Coupled Eulerian Lagrangian Approach.* Master’s thesis, submitted 30 July 2024. Source of `02_media1_abhe.mp4`.
+
+<a id="ref-john"></a>
+**Karatu, John Mathinji (2026).** *Numerical Modelling of Ship Side-Collision with a Floating Offshore Wind Turbine (FOWT).* Master’s thesis, submitted 20 August 2026. Source of `03_1_Media1_John.mp4` and `03_2_Media2_John.mp4`.
+
+<a id="ref-sara"></a>
+**Echeverry Jaramillo, Sara.** *Numerical and analytical study of a spar-like floating offshore wind turbine impacted by a ship.* Dissertation submitted for the degree of Doctor in Applied Sciences. Source of `04_image11_sarah.gif`. Publication year and repository link to be added.
+
+<a id="ref-imca"></a>
+**International Marine Contractors Association (IMCA) (n.d.).** *Windfarm Support Vessel Njord Forseti hit wind turbine tower – Jersey Maritime Administration – IMCA.* [Incident reference](https://www.imca-int.com/safety-events/windfarm-support-vessel-njord-forseti-hit-wind-turbine-tower-jersey-maritime-administration/). Reference supplied for the opening collision GIF and the Njord Forseti damage photograph.
+
+**Other incident photographs:** Wind of Hope, 19 September 2024 (`05_2_Picture4.png`), and Petra L., Gode Wind 1, Germany, 2023 (`05_3_Picture5.jpg`). Original image credits and source links to be completed.
