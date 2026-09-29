@@ -17,13 +17,15 @@ This project invites a student to explore these questions using **LS-DYNA, Pytho
 
 Our work so far has focused on the response of **deformable offshore wind turbine supports struck by a rigid ship**. This means the ship can move, but its structure cannot bend, buckle or crush. The turbine support is allowed to deform.
 
-Previous Master’s and doctoral research has investigated how to represent these collisions and which modelling assumptions influence the response. The examples below show three contributions to this research. Click a video preview to open the corresponding MP4 file.
+Previous Master’s and doctoral research has investigated how to represent these collisions and which modelling assumptions influence the response. The examples below show three contributions to this research.
 
 ### Representing the interaction with water
 
 In his Master’s thesis, **Abhemanyu Palaniswamy Chandrasekaran** coupled the ship collision model with **MCOL** to account for hydrodynamic effects. He compared this approach with a fully coupled **Eulerian–Lagrangian simulation**, in which the water and structures are represented together, to assess the validity of the MCOL-based approach. This work addressed an essential modelling question: how can we account for the surrounding water without having to model the fluid explicitly in every collision simulation? [Read the thesis reference.](#ref-abhe)
 
-[![Ship–wind turbine collision simulation](Media/02_preview.png)](Media/02_media1_abhe.mp4)
+<p align="center">
+  <img src="Media/02_media1_abhe.gif" width="650" alt="Collision simulation from Abhemanyu Palaniswamy Chandrasekaran's master thesis">
+</p>
 
 *Collision simulation from the Master’s thesis of Abhemanyu Palaniswamy Chandrasekaran (2024).*
 
@@ -33,17 +35,16 @@ In his Master’s thesis, **Abhemanyu Palaniswamy Chandrasekaran** coupled the s
 
 | View of the support | View of the ship motion |
 |:---:|:---:|
-| [![Support response during collision](Media/03_1_preview.png)](Media/03_1_Media1_John.mp4) | [![Ship motion during collision](Media/03_2_preview.png)](Media/03_2_Media2_John.mp4) |
-| [Play video](Media/03_1_Media1_John.mp4) | [Play video](Media/03_2_Media2_John.mp4) |
+| <img src="Media/03_1_Media1_John.gif" width="350" alt="Support response during a side collision"> | <img src="Media/03_2_Media2_John.gif" width="350" alt="Ship motion during a side collision"> |
 
 *Two views from John Mathinji Karatu’s Master’s thesis (2026), showing the support response and the motion of the ship during a side collision.*
 
 ### Identifying the modelling choices that matter
 
-In her doctoral thesis, **Sara Echeverry Jaramillo** carried out a parametric investigation of ship impacts on a spar-like floating offshore wind turbine. Her study considered factors such as **impactor mass, impact velocity, hydrodynamic coupling through MCOL and the inclusion of gravity**. The aim was to understand how these choices affect the predicted response and to identify what needs to be represented in a collision model. This provides a foundation for applying the same approach to the ship structure in the proposed thesis. [Read the thesis reference.](#ref-sara)
+In her doctoral thesis, **Sara Echeverry Jaramillo** carried out a parametric investigation of ship impacts on a spar-like floating offshore wind turbine. Her study considered factors such as **impactor mass, impact velocity, hydrodynamic coupling through MCOL, the inclusion of gravity, ...** The aim was to understand how these choices affect the predicted response and to identify what needs to be represented in a collision model. This provides a foundation for applying the same approach to the ship structure in the proposed thesis. [Read the thesis reference.](#ref-sara)
 
 <p align="center">
-  <img src="Media/04_image11_sarah.gif" width="650" alt="Collision simulation from Sara Echeverry Jaramillo’s doctoral research">
+  <img src="Media/04_image11_sara.gif" width="650" alt="Collision simulation from Sara Echeverry Jaramillo’s doctoral research">
 </p>
 
 *Illustration from Sara Echeverry Jaramillo’s doctoral thesis on the numerical and analytical study of a spar-like floating offshore wind turbine impacted by a ship.*
@@ -64,7 +65,7 @@ Real ships can sustain substantial structural damage. Their hull plating and int
 - **Wind of Hope — 19 September 2024:** damage to the starboard side above the waterline, including the helideck; minor damage to the turbine base was also reported.
 - **Petra L. — 2023:** hull damage following a collision with an offshore wind turbine at Gode Wind 1 in Germany.
 
-*These real incidents illustrate why ship deformation matters. They are contextual examples, not matched validation cases for the simulations above. Source links for the Wind of Hope and Petra L. images remain to be added.*
+*These real incidents illustrate why ship deformation matters. They are contextual examples, not matched validation cases for the simulations above.*
 
 This leads to our next question: **when is the rigid-ship assumption sufficient, and when do we need to model ship deformation explicitly?** Answering it requires a practical way to generate and compare deformable ship models.
 
@@ -120,7 +121,7 @@ This project would suit a student who:
 
 ## How the work continues
 
-The thesis will deliver a reusable ship modelling procedure, a documented set of comparison simulations and recommendations on the required level of structural detail. These outputs will support wider collision studies and the future development of simplified analytical models of ship deformation within the ongoing PhD research.
+The Master's thesis will deliver a reusable ship modelling procedure, a documented set of comparison simulations and recommendations on the required level of structural detail. These outputs will support wider collision studies and the future development of simplified analytical models of ship deformation within the ongoing PhD research.
 
 The student will have an independent research question and will interpret their own comparison study. The subsequent large-scale simulation campaign and analytical model development form the longer-term research outlook.
 
