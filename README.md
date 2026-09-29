@@ -10,10 +10,10 @@ This project invites a student to explore these questions using **LS-DYNA, Pytho
 ## From real collisions to numerical models
 
 <p align="center">
-  <img src="Media/01_ship-OWT_impact.gif" width="650" alt="Still images showing a vessel close to an offshore wind turbine during a collision sequence">
+  <img src="Media/01_ship-OWT_impact.gif" width="650">
 </p>
 
-*Real-world collision imagery provides the context for the research. The supplied file is a still image.*
+*International Marine Contractors Association. (n.d.). Windfarm Support Vessel Njord Forseti hit wind turbine tower – Jersey Maritime Administration – IMCA.*
 
 Our work so far has focused on the response of **deformable offshore wind turbine supports struck by a rigid ship**. This means the ship can move, but its structure cannot bend, buckle or crush. The turbine support is allowed to deform.
 
