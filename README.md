@@ -13,7 +13,7 @@ This project invites a student to explore these questions using **LS-DYNA, Pytho
   <img src="Media/01_ship-OWT_impact.gif" width="650">
 </p>
 
-*International Marine Contractors Association. (n.d.). Windfarm Support Vessel Njord Forseti hit wind turbine tower – Jersey Maritime Administration – IMCA.*
+*ref: International Marine Contractors Association. (n.d.). Windfarm Support Vessel Njord Forseti hit wind turbine tower – Jersey Maritime Administration – IMCA.*
 
 Our work so far has focused on the response of **deformable offshore wind turbine supports struck by a rigid ship**. This means the ship can move, but its structure cannot bend, buckle or crush. The turbine support is allowed to deform.
 
@@ -28,6 +28,9 @@ The numerical examples below illustrate the turbine response and the motion of t
 | [![Support response during collision](Media/03_1_preview.png)](Media/03_1_Media1_John.mp4) | [![Ship motion during collision](Media/03_2_preview.png)](Media/03_2_Media2_John.mp4) |
 | [Play video](Media/03_1_Media1_John.mp4) | [Play video](Media/03_2_Media2_John.mp4) |
 
+<p align="center">
+  <img src="Media/04_image11_sarah.gif" width="650">
+</p>
 <!-- Media slot 04: replace Media/04_image11_sarah.gif before displaying it. The supplied file contains a single black frame. -->
 
 ## But how realistic is a perfectly rigid ship?
